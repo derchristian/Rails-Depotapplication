@@ -2150,3 +2150,123 @@ c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
 Rendering store/index
   [4;36;1mProduct Columns (0.000571)[0m   [0;1mSHOW FIELDS FROM `products`[0m
 Completed in 0.01012 (98 reqs/sec) | Rendering: 0.00247 (24%) | DB: 0.00067 (6%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:26:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000092)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000580)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.01013 (98 reqs/sec) | Rendering: 0.00397 (39%) | DB: 0.00067 (6%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:30:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000089)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000574)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.00952 (105 reqs/sec) | Rendering: 0.00328 (34%) | DB: 0.00066 (6%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:31:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000088)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000620)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.00847 (118 reqs/sec) | Rendering: 0.00269 (31%) | DB: 0.00071 (8%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:31:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000098)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000632)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.00882 (113 reqs/sec) | Rendering: 0.00280 (31%) | DB: 0.00073 (8%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:46:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000090)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000637)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.01056 (94 reqs/sec) | Rendering: 0.00483 (45%) | DB: 0.00073 (6%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:46:23) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"authenticity_token"=>"efdf6ed97ab0789e31f391a45bf10af0485cbed0", "action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000088)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000557)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.00883 (113 reqs/sec) | Rendering: 0.00321 (36%) | DB: 0.00064 (7%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:46:24) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"authenticity_token"=>"efdf6ed97ab0789e31f391a45bf10af0485cbed0", "action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000092)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000605)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.01006 (99 reqs/sec) | Rendering: 0.00358 (35%) | DB: 0.00070 (6%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:46:25) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"authenticity_token"=>"efdf6ed97ab0789e31f391a45bf10af0485cbed0", "action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000095)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000568)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.00938 (106 reqs/sec) | Rendering: 0.00335 (35%) | DB: 0.00066 (7%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:47:24) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"authenticity_token"=>"efdf6ed97ab0789e31f391a45bf10af0485cbed0", "action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000099)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000616)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.01010 (99 reqs/sec) | Rendering: 0.00347 (34%) | DB: 0.00072 (7%) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-05-22 21:58:15) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTlmOTg3YzIzM2YxMTMzNmM4ZmM4N2Q2NGM4NDQz
+OTgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0583e683cc7121001925bfca2346996d4080fbe6
+  Parameters: {"authenticity_token"=>"efdf6ed97ab0789e31f391a45bf10af0485cbed0", "action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000119)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.000585)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 0.00988 (101 reqs/sec) | Rendering: 0.00331 (33%) | DB: 0.00070 (7%) | 200 OK [http://localhost/store]
