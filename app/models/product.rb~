@@ -1,9 +1,4 @@
 class Product < ActiveRecord::Base
-	
-	def self.find_products_for_sale
-		find(:all, :order => "title")
-	end
-	
 	validates_presence_of :title, :description, :image_url
 	validates_numericality_of :price
 	validates_uniqueness_of :title
@@ -11,7 +6,7 @@ class Product < ActiveRecord::Base
 	:with => %r{\.(gif|jpg|png)$}i,
 	:message => 'Must be a URL for GIF, JPG or PNG image.'
 	validate :price_must_be_at_least_a_cent
-	validates_length_of :title, :minimum => 10,
+	validates_lenght_of :title, :minimum => 10,
 	:message => 'Der Titel muss aus mindestens 10 Zeichen bestehen.'
 	
 	protected
