@@ -1,11 +1,6 @@
 <h1>Your Pragmatic Catalog</h1>
 <% for product in @products -%>
-  <div class="entry">
-    <!--<%= image_tag(product.image_url) %>
-    <%= link_to image_tag(product.image_url),
-    {:action => :add_to_cart, :id => product },
-    :method => :post,
-    :alt => "Click on the Book-Image to add it to the cart", :title => "Add to cart" %> -->
+  <div class="entry">   
     <% form_remote_tag :url => { :action => :add_to_cart, :id => product } do %>
       <%= image_submit_tag (product.image_url, :alt => product.title, :title => "Add to cart", :class => "product_picture") -%>
     <% end %>
