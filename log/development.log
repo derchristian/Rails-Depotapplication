@@ -12055,3 +12055,570 @@ Processing InfoController#who_bought (for 127.0.0.1 at 2009-06-09 23:53:46) [GET
   [4;36;1mOrder Load (0.000086)[0m   [0;1mSELECT `orders`.* FROM `orders` INNER JOIN line_items ON orders.id = line_items.order_id WHERE ((`line_items`.product_id = 2)) [0m
   [4;35;1mOrder Columns (0.000580)[0m   [0mSHOW FIELDS FROM `orders`[0m
 Completed in 0.13842 (7 reqs/sec) | Rendering: 0.00008 (0%) | DB: 0.00517 (3%) | 200 OK [http://localhost/info/who_bought/2.xml]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 20:16:00) [GET]
+  Session ID: 164a66adc1cd1fcaf5bc145e3211c616
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.010794)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.000611)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (0.00151)
+Completed in 0.10113 (9 reqs/sec) | Rendering: 0.03453 (34%) | DB: 0.22464 (222%) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 20:34:20) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.7ms)
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/store]
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+  [4;36;1mSQL (22.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:05:38) [GET]
+  [4;35;1mProduct Load (23.2ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.7ms)
+Completed in 250ms (View: 69, DB: 174) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:23:48) [GET]
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.7ms)
+Completed in 59ms (View: 25, DB: 10) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:32:56) [GET]
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.3ms)
+Completed in 24ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:33:02) [GET]
+  Parameters: {"commit"=>"submit", "locale"=>"es"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 75ms (View: 13, DB: 1) | 200 OK [http://localhost/store?locale=es&commit=submit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:35:56) [GET]
+  Parameters: {"commit"=>"submit", "locale"=>"es"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 91ms (View: 12, DB: 69) | 200 OK [http://localhost/store?locale=es&commit=submit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:37:55) [GET]
+  Parameters: {"commit"=>"submit", "locale"=>"es"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.5ms)
+Completed in 76ms (View: 65, DB: 1) | 200 OK [http://localhost/store?locale=es&commit=submit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:11)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:39:17) [GET]
+  Parameters: {"commit"=>"submit", "locale"=>"es"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/store?locale=es&commit=submit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:56:09) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f1fa49c6588>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.2ms)
+Completed in 29ms (View: 14, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 22:56:21) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f1fa489dad0>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.3ms)
+Completed in 28ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:08:29) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f1fa4a17d70>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 37ms (View: 19, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:08:37) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f1fa4908380>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 29ms (View: 13, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:10:11) [GET]
+undefined local variable or method `local_path' for #<StoreController:0x7feba72d37b0>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.5ms)
+Completed in 51ms (View: 26, DB: 2) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:11:03) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7feba6284788>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 30ms (View: 14, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:12:55) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7feba5e5ab80>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 29ms (View: 13, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:14:13) [GET]
+undefined local variable or method `local_path' for #<StoreController:0x7f539752ce38>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.1ms)
+Completed in 79ms (View: 57, DB: 1) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:15:57) [GET]
+undefined local variable or method `local_path' for #<StoreController:0x7f53961b63b8>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 32ms (View: 15, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:16:03) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f5396556158>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 33ms (View: 15, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:21:01) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f5396110738>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.4ms)
+Completed in 37ms (View: 21, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:27:25) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f53964e4148>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.4ms)
+Completed in 33ms (View: 16, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:49:11) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f539768a0a0>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.7ms)
+Completed in 79ms (View: 63, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:49:14) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f5393e302b8>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.6ms)
+Completed in 29ms (View: 13, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:49:19) [GET]
+undefined local variable or method `local_path' for #<StoreController:0x7f5393d3f908>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.8ms)
+Completed in 79ms (View: 14, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:54:18) [GET]
+undefined local variable or method `local_path' for #<StoreController:0x7f7563080310>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (2.8ms)
+Completed in 52ms (View: 27, DB: 2) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:58:38) [GET]
+undefined local variable or method `local_path' for #<StoreController:0x7f7564cfcb10>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.7ms)
+Completed in 73ms (View: 55, DB: 3) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:58:42) [GET]
+undefined local variable or method `local_path' for #<StoreController:0x7f75631bd660>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.7ms)
+Completed in 29ms (View: 13, DB: 1) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-18 23:58:47) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f7562ed6eb0>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.6ms)
+Completed in 32ms (View: 13, DB: 2) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:01:57) [GET]
+  Parameters: {"locale"=>"es"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.9ms)
+Completed in 27ms (View: 14, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:02:08) [GET]
+  Parameters: {"locale"=>"es"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.8ms)
+Completed in 26ms (View: 15, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:02:19) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (6.5ms)
+Completed in 66ms (View: 51, DB: 1) | 200 OK [http://localhost/store?locale=en]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:02:26) [GET]
+  Parameters: {"locale"=>"es"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.8ms)
+Completed in 27ms (View: 15, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:03:09) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f7562f9f720>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.2ms)
+Completed in 28ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:03:14) [GET]
+  Parameters: {"locale"=>"en"}
+undefined local variable or method `sessio' for #<StoreController:0x7f7564e5b1c8>
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.3ms)
+Completed in 72ms (View: 14, DB: 1) | 200 OK [http://localhost/store?locale=en]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:03:23) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f75631ff0d8>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.2ms)
+Completed in 30ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:06:00) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f7562f11768>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.2ms)
+Completed in 28ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:06:04) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f7563534370>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.2ms)
+Completed in 31ms (View: 13, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:06:45) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f7563185828>
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (34.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.3ms)
+Completed in 62ms (View: 12, DB: 35) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:06:47) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f7562ecf390>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.3ms)
+Completed in 27ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:06:52) [GET]
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.3ms)
+Completed in 25ms (View: 13, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:12)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:06:57) [GET]
+  Parameters: {"locale"=>"es"}
+undefined local variable or method `sessio' for #<StoreController:0x7f75630ec6f0>
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.3ms)
+Completed in 29ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:09:52) [GET]
+  Parameters: {"locale"=>"es"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.8ms)
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:09:58) [GET]
+  Parameters: {"locale"=>"es"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.9ms)
+Completed in 29ms (View: 15, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:14:33) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.2ms)
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=en]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:14:41) [GET]
+  Parameters: {"locale"=>"es"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.9ms)
+Completed in 27ms (View: 14, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 00:14:49) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.2ms)
+Completed in 25ms (View: 13, DB: 1) | 200 OK [http://localhost/store?locale=en]

@@ -1,0 +1,19 @@
+xml.instruct!
+xml.declare! :DOCTYPE, :html, :PUBLIC, "-//W3C//DTD XHTML 1.0 Strict//EN",     
+                    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" 
+# => <!ELEMENT blah "yada">
+xml.html("xmlns" => "http://www.w3.org/1999/xhtml") do
+  xml.head do
+    xml.title("Products")
+  end
+  xml.body do
+    for product in @products
+      xml.p do
+        xml.h1(product.title)
+        xml.p(product.description)
+        xml.p(product.image_url)
+      end
+    end
+  end
+end
+
