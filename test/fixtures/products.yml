@@ -5,3 +5,9 @@
 #
 # two:
 #   column: value
+
+  ruby_book:
+    title:       My Ruby Book
+    description: Dummy description
+    price:       123
+    image_url:   bild.jpg

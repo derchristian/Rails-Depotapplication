@@ -12622,3 +12622,859 @@ Rendering store/index
   [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
 Rendered store/_cart (1.2ms)
 Completed in 25ms (View: 13, DB: 1) | 200 OK [http://localhost/store?locale=en]
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 10:12:59) [GET]
+  [4;35;1mProduct Load (16.8ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (3.4ms)
+Completed in 330ms (View: 85, DB: 173) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 10:13:03) [GET]
+  Parameters: {"locale"=>"es"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.9ms)
+Completed in 26ms (View: 15, DB: 1) | 200 OK [http://localhost/store?locale=es]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: protect_from_forgery only takes :only and :except options now. :digest and :secret have no effect. (called from /home/christian2/Studium/Ruby_on_rails/depot/app/controllers/application_controller.rb:26)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-06-19 10:13:10) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.2ms)
+Completed in 26ms (View: 12, DB: 1) | 200 OK [http://localhost/store?locale=en]
+  [4;36;1mSQL (159.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (126.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (122.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20090521194044)
+Migrating to AddPriceToProduct (20090521204206)
+Migrating to AddTestData (20090521212308)
+Migrating to CreateSessions (20090523193828)
+Migrating to CreateOrders (20090525140333)
+Migrating to CreateLineItems (20090525140439)
+Migrating to CreateUsers (20090526202027)
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (31.4ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `line_items`[0m
+  [4;36;1mSQL (16.1ms)[0m   [0;1mSHOW KEYS FROM `line_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `orders`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `products`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `products`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (12.2ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (49.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (22.2ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (65.5ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (24.3ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (65.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (14.4ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (63.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (14.8ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (14.8ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (9.4ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (17.5ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (14.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (19.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (15.9ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.4ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (19.7ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (9.6ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (17.7ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Exists (0.3ms)[0m   [0;1mSELECT `products`.id FROM `products` WHERE (`products`.`title` = BINARY 'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Exists (0.2ms)[0m   [0mSELECT `products`.id FROM `products` WHERE (`products`.`title` = BINARY 'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Exists (0.2ms)[0m   [0;1mSELECT `products`.id FROM `products` WHERE (`products`.`title` = BINARY 'myBook') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (22.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (37.6ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (79.8ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (14.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (9.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (8.5ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (9.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (11.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (10.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (8.5ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (7.3ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (8.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `depot_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `depot_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `adress` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2) DEFAULT 0.0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090526202027')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521194044')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521204206')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090525140333')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090525140439')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090521212308')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090523193828')[0m

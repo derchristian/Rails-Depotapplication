@@ -12,10 +12,10 @@
 ActiveRecord::Schema.define(:version => 20090526202027) do
 
   create_table "line_items", :force => true do |t|
-    t.integer  "product_id",  :limit => 11,                               :null => false
-    t.integer  "order_id",    :limit => 11,                               :null => false
-    t.integer  "quantity",    :limit => 11,                               :null => false
-    t.decimal  "total_price",               :precision => 8, :scale => 2, :null => false
+    t.integer  "product_id",                                :null => false
+    t.integer  "order_id",                                  :null => false
+    t.integer  "quantity",                                  :null => false
+    t.decimal  "total_price", :precision => 8, :scale => 2, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
